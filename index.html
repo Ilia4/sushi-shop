@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Moji - Служба доставки суши и роллов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header class="header">
+            <div class="container">
+            <div class="header-left">
+                <button class="menu-toggle">
+                <span class="menu-icon">☰</span>
+                </button>
+                <a href="#" class="logo">
+                <img src="img/logo.jpg" alt="Логотип" class="logo-img" />
+                <span class="logo-text">Sushi Moji</span>
+                </a>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Поиск по меню" />
+                <button class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="25" height="25" fill="white">
+                        <g>
+                            <path d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/>
+                        </g>
+                        </svg>
+                </button>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="working-hours">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="orange"><path d="M12,24C5.383,24,0,18.617,0,12S5.383,0,12,0s12,5.383,12,12-5.383,12-12,12Zm0-21C7.038,3,3,7.037,3,12s4.038,9,9,9,9-4.037,9-9S16.963,3,12,3Zm5,9.5c0-.828-.672-1.5-1.5-1.5h-2.5V6.5c0-.828-.671-1.5-1.5-1.5s-1.5,.672-1.5,1.5v6c0,.828,.671,1.5,1.5,1.5h4c.828,0,1.5-.672,1.5-1.5Z"/></svg></span>
+                <span>10:00 - 23:30</span>
+                </div>
+                <div class="phone">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="orange"><path d="M12,24C5.383,24,0,18.617,0,12S5.383,0,12,0s12,5.383,12,12-5.383,12-12,12Zm0-21C7.038,3,3,7.038,3,12s4.038,9,9,9,9-4.038,9-9S16.962,3,12,3ZM7.636,13.971l-1.302,1c-.446,.446-.446,1.17,0,1.616l.522,.6c.551,.552,1.277,.813,2,.813,3.714,0,9.143-5.143,9.143-9.143,0-.723-.261-1.449-.813-2l-.6-.522c-.446-.446-1.17-.446-1.616,0l-1,1.302c-.446,.446-.446,1.17,0,1.616l.851,1.069c-.901,2.244-2.429,3.71-4.5,4.5l-1.069-.851c-.446-.446-1.17-.446-1.616,0Z"/></svg></span>
+                <span>+7 (8552) 39-75-57</span>
+                </div>
+                <div class="location">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="orange">
+                    <path d="M24.009,21.888l-5.939-5.939c1.226-1.66,1.952-3.71,1.952-5.927C20.021,4.508,15.535,.021,10.021,.021S.021,4.508,.021,10.021s4.486,10,10,10c2.217,0,4.267-.726,5.927-1.952l5.939,5.939,2.121-2.121Zm-13.987-4.866c-3.859,0-7-3.141-7-7S6.162,3.021,10.021,3.021s7,3.141,7,7-3.141,7-7,7Zm-.021-12.021c-1.024,0-2.047,.391-2.829,1.172-1.562,1.562-1.562,4.095,0,5.657l2.828,2.766,2.828-2.766c1.562-1.562,1.562-4.095,0-5.657-.781-.781-1.805-1.172-2.828-1.172Zm0,5.5c-.828,0-1.5-.672-1.5-1.5s.672-1.5,1.5-1.5,1.5,.672,1.5,1.5-.672,1.5-1.5,1.5Z"/>
+                </svg>
+                </span>
+                <span>Набережные Челны</span>
+                </div>
+                <button class="login-button" id="open-modal">
+                <span class="icon">👤</span> Войти
+                </button>
+            </div>
+            </div>
+        </header>
+        
+
+        <div class="layout">
+            <aside class="sidebar">
+            <ul class="menu">
+                <li class="menu-item"><button class="menu-item btn">Акция</button></li>
+                <li class="menu-item"><button class="menu-item btn">Роллы сеты</button></li>
+                <li class="menu-item"><button class="menu-item btn">Роллы</button></li>
+                <li class="menu-item"><button class="menu-item btn">Пицца</button></li>
+                <li class="menu-item"><button class="menu-item btn">Поке</button></li>
+                <li class="menu-item"><button class="menu-item btn">Салаты</button></li>
+                <li class="menu-item"><button class="menu-item btn">Супы</button></li>
+                <li class="menu-item"><button class="menu-item btn">Горячие закуски и блюда</button></li>
+                <li class="menu-item"><button class="menu-item btn">Паста</button></li>
+                <li class="menu-item"><button class="menu-item btn">Китайская лапша</button></li>
+                <li class="menu-item"><button class="menu-item btn">Десерты</button></li>
+                <li class="menu-item"><button class="menu-item btn">Допы к блюдам</button></li>
+                <li class="menu-item"><button class="menu-item btn">Напитки</button></li>
+            </ul>
+            </aside>
+            <main class="content">
+                <div class="content">
+                    <h2>Роллы</h2> 
+                    
+                    <div class="slider-container">
+                       <button class="arrow left">←</button>
+                        <div class="promo-block">
+                            <div class="promo-item">
+                                <img src="img/roll_s_goryachim_lososoem.jpg" alt="Ролл горячий с лососем" />
+                                <p class="name">Ролл горячий с лососем</p>
+                                <p class="weight">274 гр.</p>
+                                <p class="price">269 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/chiken-krab.jpg" alt="Ролл чикен краб" />
+                                <p class="name">Ролл чикен краб</p>
+                                <p class="weight">242 гр.</p>
+                                <p class="price">249 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/fila-tar-tar--sayt-1.jpg" alt="Филадельфия тар-тар" />
+                                <p class="name">Филадельфия тар-тар</p>
+                                <p class="weight">270 гр.</p>
+                                <p class="price">299 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/a01c86ded33e0cae6ba3e67fa94da1a0.jpg" alt="Ролл Том ям" />
+                                <p class="name">Ролл Том ям</p>
+                                <p class="weight">300 гр.</p>
+                                <p class="price">319 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/Rolls-Chedder_BIG.png" alt="Ролл Чеддер" />
+                                <p class="name">Ролл Чеддер</p>
+                                <p class="weight">262 гр.</p>
+                                <p class="price">349 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/Rolls-Dragon_BIG_k2cg27P.png" alt="Дракон" />
+                                <p class="name">Дракон</p>
+                                <p class="weight">292 гр.</p>
+                                <p class="price">479 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/drakon-light.webp" alt="Дракон лайт" />
+                                <p class="name">Дракон лайт</p>
+                                <p class="weight">252 гр.</p>
+                                <p class="price">399 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/canada-light.jpg" alt="Канада" />
+                                <p class="name">Канада</p>
+                                <p class="weight">247 гр.</p>
+                                <p class="price">349 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/370ролл_Киото.jpg" alt="Киото" />
+                                <p class="name">Киото</p>
+                                <p class="weight">244 гр.</p>
+                                <p class="price">349 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/milan.jpg" alt="Ролл Милан" />
+                                <p class="name">Ролл Милан</p>
+                                <p class="weight">237 гр.</p>
+                                <p class="price">219 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/kynsei.jpg" alt="Мини кунсей" />
+                                <p class="name">Мини кунсей</p>
+                                <p class="weight">139 гр.</p>
+                                <p class="price">309 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                        </div> 
+                       <button class="arrow right">→</button>
+                    </div>
+                    
+                </div>
+                
+                <div class="content">
+                    <h2>Роллы сеты</h2>
+                    <div class="slider-container">
+                        <button class="arrow left">←</button>
+                        <div class="promo-block">
+                            <div class="promo-item">
+                                <img src="img/set1.webp" alt="Сет №1" />
+                                <p class="name">Сет №1</p>
+                                <p class="weight">678 гр.</p>
+                                <p class="price">979 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/set2.webp" alt="Сет №2" />
+                                <p class="name">Сет №2</p>
+                                <p class="weight">1270 гр.</p>
+                                <p class="price">1 519 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/set3.webp" alt="Сет №3" />
+                                <p class="name">Сет №3</p>
+                                <p class="weight">910 гр.</p>
+                                <p class="price">1 219 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/set4.webp" alt="Сет №4" />
+                                <p class="name">Сет №4</p>
+                                <p class="weight">1090 гр.</p>
+                                <p class="price">1 319 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/set5.webp" alt="Сет №5" />
+                                <p class="name">Сет №5</p>
+                                <p class="weight">1140 гр.</p>
+                                <p class="price">1 319 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/set6.webp" alt="Сет №6" />
+                                <p class="name">Сет №6</p>
+                                <p class="weight">1190 гр.</p>
+                                <p class="price">1 219 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/set7.webp" alt="Сет №7" />
+                                <p class="name">Сет №7</p>
+                                <p class="weight">1890 гр.</p>
+                                <p class="price">2 199 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            
+                            
+                        </div>
+                        <button class="arrow right">→</button>
+                    </div>
+                </div>
+                
+                <div class="content">
+                    <h2>Пицца</h2>
+                    <div class="slider-container">
+                        <button class="arrow left">←</button>
+                        <div class="promo-block">
+                            <div class="promo-item">
+                                <img src="img/pizza-4-vkysa.jpg" alt="Ролл горячий с лососем" />
+                                <p class="name">Пицца 4 вкуса</p>
+                                <p class="weight">530 гр.</p>
+                                <p class="price">499 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/pizza-4-syra.png" alt="Ролл чикен краб" />
+                                <p class="name">Пицца 4 сыра</p>
+                                <p class="weight">540 гр.</p>
+                                <p class="price">509 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/pizza-barbeky.jpg" alt="Филадельфия тар-тар" />
+                                <p class="name">Пицца Барбекю</p>
+                                <p class="weight">570 гр.</p>
+                                <p class="price">479 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/pizza-derevenskya.jpg" alt="Ролл Том ям" />
+                                <p class="name">Пицца Деревенская</p>
+                                <p class="weight">600 гр.</p>
+                                <p class="price">479 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/pizza-domashnyaya.jpg" alt="Ролл Чеддер" />
+                                <p class="name">Пицца Домашняя</p>
+                                <p class="weight">662 гр.</p>
+                                <p class="price">409 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>  
+                            <div class="promo-item">
+                                <img src="img/pizza-gavaiskay.jpg" alt="Ролл Чеддер" />
+                                <p class="name">Пицца Гавайская</p>
+                                <p class="weight">562 гр.</p>
+                                <p class="price">469 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>  
+                            <div class="promo-item">
+                                <img src="img/pizza-djulieta.jpg" alt="Ролл Чеддер" />
+                                <p class="name">Пицца Жульетта</p>
+                                <p class="weight">582 гр.</p>
+                                <p class="price">419 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>  
+                            <div class="promo-item">
+                                <img src="img/pizza-italica.webp" alt="Ролл Чеддер" />
+                                <p class="name">Пицца Италика</p>
+                                <p class="weight">542 гр.</p>
+                                <p class="price">449 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>  
+                            <div class="promo-item">
+                                <img src="img/pizza-margaritta.webp" alt="Ролл Чеддер" />
+                                <p class="name">Пицца Маргарита</p>
+                                <p class="weight">582 гр.</p>
+                                <p class="price">509 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>  
+                        </div>
+                        <button class="arrow right">→</button>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h2>Десерты</h2>
+                    <div class="slider-container">
+                        <button class="arrow left">←</button>
+                        <div class="promo-block">
+                            <div class="promo-item">
+                                <img src="img/desert-3-shokolda.webp" alt="Ролл горячий с лососем" />
+                                <p class="name">Три шоколада</p>
+                                <p class="weight">274 гр.</p>
+                                <p class="price">269 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/desert-cheescake-new-york.webp" alt="Ролл чикен краб" />
+                                <p class="name">Чизкейк Нью Йорк</p>
+                                <p class="weight">242 гр.</p>
+                                <p class="price">249 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/desert-cheescake-oreo.webp" alt="Филадельфия тар-тар" />
+                                <p class="name">Чизкейк Орео</p>
+                                <p class="weight">270 гр.</p>
+                                <p class="price">299 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            <div class="promo-item">
+                                <img src="img/desert-shtrydel.webp" alt="Ролл Том ям" />
+                                <p class="name">Штрудель яблочный</p>
+                                <p class="weight">300 гр.</p>
+                                <p class="price">319 ₽</p>
+                                <button class="add-button">+</button>
+                            </div>
+                            
+                        </div>
+                        <button class="arrow right">→</button>
+                    </div>
+                </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-menu">
+                <div class="footer-column">
+                  <h4>Меню</h4>
+                  <ul>
+                    <li><a href="#">Акция</a></li>
+                    <li><a href="#">Салаты</a></li>
+                    <li><a href="#">Десерты</a></li>
+                    <li><a href="#">Роллы сеты</a></li>
+                    <li><a href="#">Супы</a></li>
+                    <li><a href="#">Допы к блюдам</a></li>
+                    <li><a href="#">Роллы</a></li>
+                    <li><a href="#">Горячие закуски и блюда</a></li>
+                    <li><a href="#">Пицца</a></li>
+                    <li><a href="#">Паста</a></li>
+                    <li><a href="#">Поке</a></li>
+                    <li><a href="#">Китайская лапша</a></li>
+                    <li><a href="#">Напитки</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h4>О заведении</h4>
+                  <ul>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Статьи</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h4>Адреса</h4>
+                  <ul>
+                    <li>Проспект Яшьлек, 8в</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="footer-bottom">
+                <div class="footer-logo">
+                  <img src="logo.png" alt="">
+                </div>
+                <div class="footer-apps">
+                  <a href="#"><img src="appstore.png" alt="App Store"></a>
+                  <a href="#"><img src="rustore.png" alt="RuStore"></a>
+                </div>
+                <div class="footer-privacy">
+                  <a href="#">Политика конфиденциальности</a>
+                </div>
+                <p>© 2014–2024</p>
+              </div>
+        </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="login">Авторизация</button>
+                <button class="tab-button" data-tab="register">Регистрация</button>
+            </div>
+            <div class="tab-content active" id="login">
+                <h2>Авторизация</h2>
+                <form>
+                  <label for="login-email">Email:</label>
+                  <input type="email" id="login-email" placeholder="Введите ваш email" required />
+                  <label for="login-password">Пароль:</label>
+                  <input type="password" id="login-password" placeholder="Введите ваш пароль" required />
+                  <button type="submit">Войти</button>
+                </form>
+            </div>
+            <div class="tab-content" id="register">
+                <h2>Регистрация</h2>
+                <form>
+                  <label for="register-email">Email:</label>
+                  <input type="email" id="register-email" placeholder="Введите ваш email" required />
+                  <label for="register-password">Пароль:</label>
+                  <input type="password" id="register-password" placeholder="Введите ваш пароль" required />
+                  <label for="register-confirm-password">Повторите пароль:</label>
+                  <input type="password" id="register-confirm-password" placeholder="Повторите ваш пароль" required />
+                  <button type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+          
+<script src="index.js"></script>
+</body>
+</html>
